@@ -1,6 +1,6 @@
 {
   "name": "remove-flow-types-loader",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "a webpack loader to remove flow types",
   "main": "index.js",
   "scripts": {

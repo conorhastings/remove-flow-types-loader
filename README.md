@@ -10,6 +10,22 @@ bundling using [`flow-remove-types`](https://github.com/leebyron/flow-remove-typ
 npm install --save remove-flow-types-loader
 ```
 
+## Configure Webpack
+
+### Webpack 2
+
+```js
+module: {
+    rules: [{
+        test: /\.jsx?$/,
+        enforce: "pre",
+        loader: "remove-flow-types-loader"
+    }]
+}
+```
+
+### Webpack 1
+
 ```js
 module: {
     preLoaders: [{

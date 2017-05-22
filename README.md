@@ -19,7 +19,7 @@ module: {
     rules: [{
         test: /\.jsx?$/,
         enforce: "pre",
-        loader: "remove-flow-types-loader",
+        use: ["remove-flow-types-loader"],
         include: path.join(__dirname, "src")
     }]
 }

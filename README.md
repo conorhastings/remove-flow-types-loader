@@ -6,8 +6,12 @@ bundling using [`flow-remove-types`](https://github.com/leebyron/flow-remove-typ
 
 ## Install
 
-```
-npm install --save remove-flow-types-loader
+```bash
+# npm
+npm install remove-flow-types-loader --save-dev
+
+# yarn
+yarn add remove-flow-types-loader --dev
 ```
 
 ## Configure Webpack

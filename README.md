@@ -4,6 +4,7 @@ Remove Flow Types Webpack Loader
 This plugin will remove [Flow](https://flowtype.org) type annotations during
 bundling using [`flow-remove-types`](https://github.com/leebyron/flow-remove-types).
 
+Options passed to this loader are passed through to flow-remove-types.
 ## Install
 
 ```bash

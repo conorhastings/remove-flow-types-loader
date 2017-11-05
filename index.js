@@ -1,6 +1,10 @@
-var flowRemoveTypes = require('flow-remove-types');
+const flowRemoveTypes = require('flow-remove-types');
+const loaderUtils = require('loader-utils');
 
-module.exports = function(source) {
+module.exports = function (source) {
   this.cacheable();
-  return flowRemoveTypes(source).toString();
-}
+
+  const options = Object.assign({}, loaderUtils.getOptions(this));
+
+  return flowRemoveTypes(source, options).toString();
+};
